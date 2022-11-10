@@ -1,0 +1,25 @@
+---
+enum SIZES {
+  small = "text-2xl",
+  medium = "text-3xl",
+  large = "text-5xl",
+}
+
+interface Props {
+  content: string;
+  color: string;
+  alignment: "text-left" | "text-center" | "text-right";
+  size: keyof typeof SIZES;
+  startDate?: string;
+  endDate?: string;
+}
+
+const { content, color, alignment, size, startDate, endDate } = Astro.props;
+---
+
+<h2 class={`${SIZES[size]} font-bold uppercase ${color} ${alignment} w-fit`}>
+  {content}
+</h2>
+<h4 class={`font-bold underline uppercase ${alignment} w-fit my-2`}>
+  {startDate} - {Boolean(endDate) ? endDate : "Present"}
+</h4>

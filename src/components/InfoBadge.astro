@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string;
+  className?: string;
+  hiring?: boolean;
+}
+
+const { title, className, hiring } = Astro.props;
+---
+
+{
+  hiring ? (
+    <div>
+      <span class={`${className} py-1 px-[4px] rounded-sm w-max`}>{title}</span>
+      <span class="text-xs">&larr; Contact me to change this</span>
+    </div>
+  ) : (
+    <span class={`${className} py-1 px-[4px] rounded-sm w-max`}>{title}</span>
+  )
+}
