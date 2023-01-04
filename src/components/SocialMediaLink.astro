@@ -1,0 +1,12 @@
+---
+export interface Props {
+  link: string;
+  icon: string;
+  description: string;
+}
+const { link, icon, description } = Astro.props;
+---
+
+<a href={link} rel="noopener noreferrer" target="_blank">
+  <img src={icon} class="h-8" alt={`Juan Rojas ${description}`} />
+</a>

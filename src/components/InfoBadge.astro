@@ -3,9 +3,10 @@ export interface Props {
   title: string;
   className?: string;
   hiring?: boolean;
+  transparent?: boolean;
 }
 
-const { title, className, hiring } = Astro.props;
+const { title, className, hiring, transparent } = Astro.props;
 ---
 
 {
@@ -15,6 +16,8 @@ const { title, className, hiring } = Astro.props;
       <span class="text-xs">&larr; Contact me to change this</span>
     </div>
   ) : (
-    <span class={`${className} py-1 px-[4px] rounded-sm w-max`}>{title}</span>
+    <span class={`${className} py-1 px-[4px] rounded-sm w-max`}>
+      <p class={!transparent && "bg-[#212121] px-2 font-semibold"}>{title}</p>
+    </span>
   )
 }

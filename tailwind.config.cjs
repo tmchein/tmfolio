@@ -9,19 +9,6 @@ module.exports = {
         "supa-green": "#46CF8E",
         "supa-white": "#F0F0F0",
       },
-      animation: {
-        rainbow: "rainbow-road 100000s infinite",
-      },
-      keyframes: {
-        "rainbow-road": {
-          "0%": {
-            backgroundPosition: "0% 0%",
-          },
-          "100%": {
-            backgroundPosition: "2147483647vw 0%",
-          },
-        },
-      },
     },
   },
   plugins: [],

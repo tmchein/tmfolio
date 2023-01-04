@@ -4,6 +4,7 @@ import WindowContainer from "../components/WindowContainer.astro";
 import PresentationImg from "../components/PresentationImg.astro";
 import InfoBadge from "../components/InfoBadge.astro";
 import Title from "../components/Title.astro";
+import SocialMediaLink from "../components/SocialMediaLink.astro";
 ---
 
 <Layout title="Juan Rojas - Frontend developer">
@@ -21,27 +22,21 @@ import Title from "../components/Title.astro";
         <section
           class="flex justify-center gap-2 my-4 bg-slate-50 rounded-md py-4"
         >
-          <a
-            href="https://www.linkedin.com/in/juanrojasdev/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img src="/icons/linkedin.svg" class="w-8 h-8" alt="Juan Rojas Linkedin"/>
-          </a>
-          <a
-            href="https://github.com/tmchein"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img src="/icons/github.svg" class="w-8 h-8" alt="Juan Rojas Github"/>
-          </a>
-          <a
-            href="https://twitter.com/tmchein"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img src="/icons/twitter.svg" class="h-8" alt="Juan Rojas Twitter"/>
-          </a>
+          <SocialMediaLink
+            description="Linkedin"
+            icon="/icons/linkedin.svg"
+            link="https://www.linkedin.com/in/juanrojasdev/"
+          />
+          <SocialMediaLink
+            description="Github"
+            icon="/icons/github.svg"
+            link="https://github.com/tmchein"
+          />
+          <SocialMediaLink
+            description="Twitter"
+            icon="/icons/twitter.svg"
+            link="https://twitter.com/tmchein"
+          />
         </section>
         <section class="my-4">
           Developer engrossed in web and software development, working with
@@ -53,13 +48,13 @@ import Title from "../components/Title.astro";
         <footer class="border-t-2 my-2">
           <h2 class="text-xl font-extrabold my-2">Technology stack</h2>
           <div class="flex flex-wrap gap-1">
-            <InfoBadge title="HTML" className="bg-orange-400 text-white`" />
-            <InfoBadge title="CSS" className="bg-sky-400 text-white`" />
-            <InfoBadge title="Javascript" className="bg-[#F0D91C] text-black" />
-            <InfoBadge title="Typescript" className="bg-blue-800 text-white" />
-            <InfoBadge title="React" className="bg-sky-500 text-white" />
-            <InfoBadge title="Next.js" className="bg-gray-900 text-white" />
-            <InfoBadge title="Node" className="bg-emerald-500 text-white`" />
+            <InfoBadge title="HTML" className="bg-orange-400" />
+            <InfoBadge title="CSS" className="bg-sky-400" />
+            <InfoBadge title="Javascript" className="bg-[#F0D91C]" />
+            <InfoBadge title="Typescript" className="bg-blue-800" />
+            <InfoBadge title="React" className="bg-sky-500" />
+            <InfoBadge title="Next.js" className="bg-white" />
+            <InfoBadge title="Node" className="bg-emerald-500" />
           </div>
         </footer>
       </WindowContainer>
@@ -91,13 +86,13 @@ import Title from "../components/Title.astro";
             backend services.
           </p>
           <div class="flex flex-wrap gap-1 mt-4">
-            <InfoBadge title="HTML" className="bg-orange-400 text-white`" />
-            <InfoBadge title="CSS" className="bg-sky-400 text-white`" />
-            <InfoBadge title="Javascript" className="bg-[#F0D91C] text-black" />
-            <InfoBadge title="React" className="bg-sky-500 text-white" />
-            <InfoBadge title="Next.js" className="bg-gray-900 text-white" />
-            <InfoBadge title="Node" className="bg-emerald-500 text-white`" />
-            <InfoBadge title="GraphQL" className="bg-pink-600 text-white`" />
+            <InfoBadge title="HTML" className="bg-orange-400" />
+            <InfoBadge title="CSS" className="bg-sky-400" />
+            <InfoBadge title="Javascript" className="bg-[#F0D91C]" />
+            <InfoBadge title="React" className="bg-sky-500" />
+            <InfoBadge title="Next.js" className="bg-white" />
+            <InfoBadge title="Node" className="bg-emerald-500" />
+            <InfoBadge title="GraphQL" className="bg-pink-600" />
           </div>
         </WindowContainer>
         <WindowContainer className="border-[#FF681C]">
@@ -117,12 +112,12 @@ import Title from "../components/Title.astro";
             improve existing ones.
           </p>
           <div class="flex flex-wrap gap-1 mt-4">
-            <InfoBadge title="HTML" className="bg-orange-400 text-white`" />
-            <InfoBadge title="CSS" className="bg-sky-400 text-white`" />
-            <InfoBadge title="Javascript" className="bg-[#F0D91C] text-black" />
-            <InfoBadge title="React" className="bg-sky-500 text-white" />
-            <InfoBadge title="Next.js" className="bg-gray-900 text-white" />
-            <InfoBadge title="Nest.js" className="bg-pink-500 text-white`" />
+            <InfoBadge title="HTML" className="bg-orange-400" />
+            <InfoBadge title="CSS" className="bg-sky-400" />
+            <InfoBadge title="Javascript" className="bg-[#F0D91C]" />
+            <InfoBadge title="React" className="bg-sky-500" />
+            <InfoBadge title="Next.js" className="bg-white" />
+            <InfoBadge title="Nest.js" className="bg-pink-500" />
           </div>
         </WindowContainer>
         <WindowContainer className="border-[#00A69A]">
@@ -146,12 +141,12 @@ import Title from "../components/Title.astro";
             >
           </p>
           <div class="flex flex-wrap gap-1 mt-4">
-            <InfoBadge title="HTML" className="bg-orange-400 text-white`" />
-            <InfoBadge title="CSS" className="bg-sky-400 text-white`" />
-            <InfoBadge title="React" className="bg-sky-500 text-white" />
-            <InfoBadge title="Turborepo" className="bg-gray-900 text-white" />
-            <InfoBadge title="MDX" className="bg-sky-900 text-white" />
-            <InfoBadge title="TailwindCSS" className="bg-sky-500 text-white`" />
+            <InfoBadge title="HTML" className="bg-orange-400" />
+            <InfoBadge title="CSS" className="bg-sky-400" />
+            <InfoBadge title="React" className="bg-sky-500" />
+            <InfoBadge title="Turborepo" className="bg-white" />
+            <InfoBadge title="MDX" className="bg-sky-900" />
+            <InfoBadge title="TailwindCSS" className="bg-sky-500" />
           </div>
         </WindowContainer>
       </div>
