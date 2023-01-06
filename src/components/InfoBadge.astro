@@ -17,7 +17,9 @@ const { title, className, hiring, transparent } = Astro.props;
     </div>
   ) : (
     <span class={`${className} py-1 px-[4px] rounded-sm w-max`}>
-      <p class={!transparent && "bg-[#212121] px-2 font-semibold"}>{title}</p>
+      <p class={!transparent ? "bg-[#212121] px-2 font-semibold" : null}>
+        {title}
+      </p>
     </span>
   )
 }
