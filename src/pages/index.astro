@@ -5,153 +5,233 @@ import SocialMediaLink from "../components/SocialMediaLink.astro";
 import Title from "../components/Title.astro";
 import WindowContainer from "../components/WindowContainer.astro";
 import Layout from "../layouts/Layout.astro";
+import SectionDivider from "../layouts/SectionDivider.astro";
 ---
 
 <Layout title="Juan Rojas - Frontend developer">
-  <main>
-    <section
-      class="relative w-full h-full flex flex-col items-center justify-center md:mt-32"
-    >
-      <WindowContainer className="z-10">
-        <h1
-          class="text-center md:text-left text-white text-3xl font-bold mb-4 relative md:absolute left-0 top-0 md:-top-12"
-        >
-          Juan Rojas, Frontend Developer.
-        </h1>
-        <PresentationImg />
-        <section
-          class="flex justify-center gap-2 my-4 bg-slate-50 rounded-md py-4"
-        >
-          <SocialMediaLink
-            description="Linkedin"
-            icon="/icons/linkedin.svg"
-            link="https://www.linkedin.com/in/juanrojasdev/"
-          />
-          <SocialMediaLink
-            description="Github"
-            icon="/icons/github.svg"
-            link="https://github.com/tmchein"
-          />
-          <SocialMediaLink
-            description="Twitter"
-            icon="/icons/twitter.svg"
-            link="https://twitter.com/tmchein"
-          />
-        </section>
-        <section class="my-4">
-          I am a software engineer with 2 years of experience focused in
-          frontend development. I have worked with international teams using
-          tools such as React.js and Node.js to develop and maintain frontend
-          solutions. I am a passionate and collaborative developer who stays
-          ahead of the curve with the JavaScript ecosystem, always willing to
-          learn and improve both technical and non-technical skills, and I am
-          always willing to share meaningful knowledge across teams.
-        </section>
-        <footer class="border-t-2 my-2">
-          <h2 class="text-xl font-extrabold my-2">Technology stack</h2>
-          <div class="flex flex-wrap gap-1">
-            <InfoBadge title="HTML" className="bg-orange-400" />
-            <InfoBadge title="CSS" className="bg-sky-400" />
-            <InfoBadge title="Javascript" className="bg-[#F0D91C]" />
-            <InfoBadge title="Typescript" className="bg-blue-800" />
-            <InfoBadge title="React" className="bg-sky-500" />
-            <InfoBadge title="Next.js" className="bg-white" />
-            <InfoBadge title="Node" className="bg-emerald-500" />
-          </div>
-        </footer>
-      </WindowContainer>
-      <img
-        src="/images/squared-vector.svg"
-        class="absolute contrast-50"
-        alt=""
+  <section
+    class="relative w-full h-full flex flex-col items-center justify-center md:mt-32"
+  >
+    <WindowContainer className="z-10">
+      <h1
+        class="text-center md:text-left text-white text-3xl font-bold mb-4 relative md:absolute left-0 top-0 md:-top-12"
+      >
+        Juan Rojas, Frontend Developer.
+      </h1>
+      <PresentationImg />
+      <section
+        class="flex justify-center gap-2 my-4 bg-slate-50 rounded-md py-4"
+      >
+        <SocialMediaLink
+          description="Linkedin"
+          icon="/icons/linkedin.svg"
+          link="https://www.linkedin.com/in/juanrojasdev/"
+        />
+        <SocialMediaLink
+          description="Github"
+          icon="/icons/github.svg"
+          link="https://github.com/tmchein"
+        />
+        <SocialMediaLink
+          description="Twitter"
+          icon="/icons/twitter.svg"
+          link="https://twitter.com/tmchein"
+        />
+      </section>
+      <section class="my-4 text-left">
+        I am a software engineer with 2 years of experience focused in frontend
+        development. I have worked with international teams using tools such as
+        React.js and Node.js to develop and maintain frontend solutions. I am a
+        passionate and collaborative developer who stays ahead of the curve with
+        the JavaScript ecosystem, always willing to learn and improve both
+        technical and non-technical skills, and I am always willing to share
+        meaningful knowledge across teams.
+      </section>
+      <footer class="border-t-2 my-2">
+        <h2 class="text-xl font-extrabold my-2">Technology stack</h2>
+        <div class="flex flex-wrap gap-1">
+          <InfoBadge title="HTML" className="bg-orange-400" />
+          <InfoBadge title="CSS" className="bg-sky-400" />
+          <InfoBadge title="Javascript" className="bg-yellow-500" />
+          <InfoBadge title="Typescript" className="bg-blue-800" />
+          <InfoBadge title="React" className="bg-sky-500" />
+          <InfoBadge title="Next.js" className="bg-white" />
+          <InfoBadge title="Node" className="bg-emerald-500" />
+        </div>
+      </footer>
+    </WindowContainer>
+    <img src="/images/squared-vector.svg" class="absolute contrast-50" alt="" />
+  </section>
+  <SectionDivider sectionTitle="Experience">
+    <WindowContainer className="border-[#BEFF69]">
+      <Title
+        content="Globant"
+        color="bg-[#8CC63E]"
+        size="medium"
+        alignment="text-left"
+        startDate="Jul 2021"
+        endDate="Present"
       />
-    </section>
-    <section
-      class="mt-4 mb-4 md:mt-16 flex flex-col items-center gap-2 md:gap-8 w-full"
-    >
-      <h2 class="text-3xl text-slate-50 font-extrabold uppercase underline">
-        Experience
-      </h2>
-      <div class="flex flex-col md:flex-row justify-center gap-2 md:gap-8">
-        <WindowContainer className="border-[#BEFF69]">
-          <Title
-            content="Globant"
-            color="bg-[#8CC63E]"
-            size="medium"
-            alignment="text-left"
-            startDate="Jul 2021"
-          />
-          <p>
-            Worked with American clients in an e-commerce platform, developed,
-            maintained and proposed new features, implemented semi automated
-            processes for changelog generation and developed solutions for
-            backend services.
-          </p>
-          <div class="flex flex-wrap gap-1 mt-4">
-            <InfoBadge title="HTML" className="bg-orange-400" />
-            <InfoBadge title="CSS" className="bg-sky-400" />
-            <InfoBadge title="Javascript" className="bg-[#F0D91C]" />
-            <InfoBadge title="React" className="bg-sky-500" />
-            <InfoBadge title="Next.js" className="bg-white" />
-            <InfoBadge title="Node" className="bg-emerald-500" />
-            <InfoBadge title="GraphQL" className="bg-pink-600" />
-          </div>
-        </WindowContainer>
-        <WindowContainer className="border-[#FF681C]">
-          <Title
-            content="Torrens University"
-            color="bg-[#F25002]"
-            size="medium"
-            alignment="text-left"
-            startDate="Jan 2021"
-            endDate="Jul 2021"
-          />
-          <p>
-            Started as a fullstack developer at Torrens University Australia.
-            Developed and mantained a wide range of web applications using
-            technologies such as ReactJS, NodeJS, NestJS, MongoDB, and MySQL. My
-            main responsibilities were to develop new features, mantain and
-            improve existing ones.
-          </p>
-          <div class="flex flex-wrap gap-1 mt-4">
-            <InfoBadge title="HTML" className="bg-orange-400" />
-            <InfoBadge title="CSS" className="bg-sky-400" />
-            <InfoBadge title="Javascript" className="bg-[#F0D91C]" />
-            <InfoBadge title="React" className="bg-sky-500" />
-            <InfoBadge title="Next.js" className="bg-white" />
-            <InfoBadge title="Nest.js" className="bg-pink-500" />
-          </div>
-        </WindowContainer>
-        <WindowContainer className="border-[#00A69A]">
-          <Title
-            content="SuperUI"
-            color="bg-[#00A69A]"
-            size="medium"
-            alignment="text-left"
-            startDate="Aug 2022"
-            endDate="Aug 2022"
-          />
-          <p>
-            Participated in Supabase's hackathon week 5 along Pablo Hernandez,
-            David Huertas and Ignacio Aldama. Finished in 2nd place as best
-            project overall with our Tailwind React Component Library. Check
-            more at: <a
-              class="text-pink-500"
-              href="https://superui.vercel.app"
-              rel="noopener noreferrer"
-              target="_blank">https://superui.vercel.app</a
-            >
-          </p>
-          <div class="flex flex-wrap gap-1 mt-4">
-            <InfoBadge title="HTML" className="bg-orange-400" />
-            <InfoBadge title="CSS" className="bg-sky-400" />
-            <InfoBadge title="React" className="bg-sky-500" />
-            <InfoBadge title="Turborepo" className="bg-white" />
-            <InfoBadge title="MDX" className="bg-sky-900" />
-            <InfoBadge title="TailwindCSS" className="bg-sky-500" />
-          </div>
-        </WindowContainer>
+      <p class="text-left">
+        Worked as a Frontend developer in Backcountry's e-commerce platform, a
+        project with a large scale of users and traffic. In Backcountry I gained
+        significant experience regarding the process of software development.
+        One of the most important challenges I faced in this project was to
+        deliver quality code in a fast paced environment.
+      </p>
+      <div class="flex flex-wrap gap-1 mt-4">
+        <InfoBadge title="HTML" className="bg-orange-400" />
+        <InfoBadge title="CSS" className="bg-sky-400" />
+        <InfoBadge title="Javascript" className="bg-yellow-500" />
+        <InfoBadge title="React" className="bg-sky-500" />
+        <InfoBadge title="Next.js" className="bg-white" />
+        <InfoBadge title="Node" className="bg-emerald-500" />
+        <InfoBadge title="GraphQL" className="bg-pink-600" />
       </div>
-    </section>
-  </main>
+    </WindowContainer>
+    <WindowContainer className="border-[#FF681C]">
+      <Title
+        content="Torrens University"
+        color="bg-[#F25002]"
+        size="medium"
+        alignment="text-left"
+        startDate="Jan 2021"
+        endDate="Jul 2021"
+      />
+      <p class="text-left">
+        Developed frontend solutions for Torrens University Australia. Worked
+        along the development team to implement new designs for the company's
+        events and delivered features in a fast paced and constantly changing
+        environment. In this position I acquired experience doing pair
+        programming.
+      </p>
+      <div class="flex flex-wrap gap-1 mt-4">
+        <InfoBadge title="HTML" className="bg-orange-400" />
+        <InfoBadge title="CSS" className="bg-sky-400" />
+        <InfoBadge title="Javascript" className="bg-yellow-500" />
+        <InfoBadge title="React" className="bg-sky-500" />
+        <InfoBadge title="Next.js" className="bg-white" />
+        <InfoBadge title="Nest.js" className="bg-pink-500" />
+      </div>
+    </WindowContainer>
+  </SectionDivider>
+  <SectionDivider sectionTitle="Projects">
+    <WindowContainer className="border-yellow-500">
+      <Title
+        content="SuperUI"
+        color="bg-yellow-500"
+        size="medium"
+        alignment="text-left"
+        startDate="Aug 2022"
+        endDate="Aug 2022"
+      />
+      <img
+        class="max-h-56 mx-auto object-cover w-full"
+        src="/images/projects/sui.jpg"
+        alt="Imagen de la pagina SuperUI"
+      />
+      <p class="text-left">
+        Participated in Supabase's hackathon week 5 along Pablo Hernandez, David
+        Huertas and Ignacio Aldama. Finished in 2nd place as best project
+        overall with our Tailwind React Component Library. Check more at: <a
+          class="text-pink-500"
+          href="https://superui.vercel.app"
+          rel="noopener noreferrer"
+          target="_blank">https://superui.vercel.app</a
+        >
+      </p>
+      <div class="flex flex-wrap gap-1 mt-4">
+        <InfoBadge title="HTML" className="bg-orange-400" />
+        <InfoBadge title="CSS" className="bg-sky-400" />
+        <InfoBadge title="React" className="bg-sky-500" />
+        <InfoBadge title="Turborepo" className="bg-white" />
+        <InfoBadge title="MDX" className="bg-sky-900" />
+        <InfoBadge title="TailwindCSS" className="bg-sky-500" />
+      </div>
+    </WindowContainer>
+    <WindowContainer className="border-white">
+      <Title
+        content="TMUrl"
+        color=""
+        size="medium"
+        alignment="text-left"
+        startDate="Jul 2022"
+      />
+      <img
+        class="max-h-56 mx-auto object-cover w-full"
+        src="/images/projects/tmurl_og.jpg"
+        alt="Imagen de la pagina TMUrl"
+      />
+      <p class="text-left">
+        I was curious about how to create an URL shortener, so I created TMUrl
+        using Nextjs, Prisma and a Database deployed on Railway. Check more at: <a
+          class="text-pink-500"
+          href="https://tmurl.vercel.app"
+          rel="noopener noreferrer"
+          target="_blank">https://tmurl.vercel.app</a
+        >
+      </p>
+      <div class="flex flex-wrap gap-1 mt-4">
+        <InfoBadge title="TailwindCSS" className="bg-sky-500" />
+        <InfoBadge title="Next.js" className="bg-white" />
+        <InfoBadge title="Prisma" className="bg-emerald-600" />
+      </div>
+    </WindowContainer>
+    <WindowContainer className="border-white">
+      <Title
+        content="TMBlog"
+        color=""
+        size="medium"
+        alignment="text-left"
+        startDate="Dec 2022"
+      />
+      <img
+        class="max-h-56 mx-auto object-cover w-full"
+        src="/images/projects/tmblog-og-image.png"
+        alt="Imagen de la pagina blog.tmchein.dev"
+      />
+      <p class="text-left">
+        I have a blog of opinion where I talk about coding stuff. For this
+        project I used Deno Fresh, which is incredible for creating static
+        websites. The best part about Deno is that the deploy time is blazingly
+        fast. Check more at: <a
+          class="text-pink-500"
+          href="https://blog.tmchein.dev"
+          rel="noopener noreferrer"
+          target="_blank">https://blog.tmchein.dev</a
+        >
+      </p>
+      <div class="flex flex-wrap gap-1 mt-4">
+        <InfoBadge title="Deno Fresh" className="bg-yellow-400" />
+        <InfoBadge title="MarkDown" className="bg-sky-500" />
+      </div>
+    </WindowContainer>
+    <WindowContainer className="border-white">
+      <Title
+        content="TMClima"
+        color=""
+        size="medium"
+        alignment="text-left"
+        startDate="Dec 2022"
+      />
+      <img
+        class="max-h-56 mx-auto object-cover w-full"
+        src="/images/projects/tmclima.jpg"
+        alt="Imagen de la pagina TMClima"
+      />
+      <p class="text-left">
+        An entry for Midudev's hackathon with RapidAPI where I developed a web
+        application with a weather API, in this case I used Sveltekit to learn
+        about new frameworks. Check more at: <a
+          class="text-pink-500"
+          href="https://tmclima.netlify.app/"
+          rel="noopener noreferrer"
+          target="_blank">https://tmclima.netlify.app/</a
+        >
+      </p>
+      <div class="flex flex-wrap gap-1 mt-4">
+        <InfoBadge title="Svelte" className="bg-orange-500" />
+      </div>
+    </WindowContainer>
+  </SectionDivider>
 </Layout>

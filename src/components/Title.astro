@@ -21,5 +21,6 @@ const { content, color, alignment, size, startDate, endDate } = Astro.props;
   {content}
 </h2>
 <h4 class={`font-bold underline uppercase ${alignment} w-fit my-2`}>
-  {startDate} - {Boolean(endDate) ? endDate : "Present"}
+  {startDate}
+  {Boolean(endDate) ? `- ${endDate}` : ""}
 </h4>
