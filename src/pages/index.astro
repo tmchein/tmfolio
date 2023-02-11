@@ -116,6 +116,37 @@ import SectionDivider from "../layouts/SectionDivider.astro";
     </WindowContainer>
   </SectionDivider>
   <SectionDivider sectionTitle="Projects">
+    <WindowContainer className="border-purple-300">
+      <Title
+        content="Lyrai"
+        color="bg-purple-500"
+        size="medium"
+        alignment="text-left"
+        startDate="Feb 2023"
+        endDate="Feb 2023"
+      />
+      <img
+        class="max-h-56 mx-auto object-cover w-full"
+        src="/images/projects/lyrai-web-page.webp"
+        alt="Imagen de la pagina Lyrai"
+      />
+      <p class="text-left">
+        Participated in midudev Cohere's hackathon along Pablo Hernandez, David
+        Huertas, Ignacio Aldama and Sara Montagud. In this project we created a
+        tool that checks if a review is computer generated or human generated.
+        Check more at: <a
+          class="text-pink-500"
+          href="https://lyrai.fly.dev"
+          rel="noopener noreferrer"
+          target="_blank">https://lyrai.fly.dev</a
+        >
+      </p>
+      <div class="flex flex-wrap gap-1 mt-4">
+        <InfoBadge title="React" className="bg-sky-500" />
+        <InfoBadge title="Next.js" className="bg-white" />
+        <InfoBadge title="TailwindCSS" className="bg-sky-500" />
+      </div>
+    </WindowContainer>
     <WindowContainer className="border-yellow-500">
       <Title
         content="SuperUI"
