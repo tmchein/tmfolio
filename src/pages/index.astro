@@ -1,7 +1,6 @@
 ---
 import InfoBadge from "../components/InfoBadge.astro";
 import PresentationImg from "../components/PresentationImg.astro";
-import SocialMediaLink from "../components/SocialMediaLink.astro";
 import Title from "../components/Title.astro";
 import WindowContainer from "../components/WindowContainer.astro";
 import Layout from "../layouts/Layout.astro";
@@ -12,44 +11,33 @@ import SectionDivider from "../layouts/SectionDivider.astro";
   <section
     class="relative w-full h-full flex flex-col items-center justify-center md:mt-32"
   >
-    <WindowContainer className="z-10">
-      <h1
-        class="text-center md:text-left text-white text-3xl font-bold mb-4 relative md:absolute left-0 top-0 md:-top-12"
-      >
-        Juan Rojas, Frontend Developer.
-      </h1>
+    <h1
+      class="text-center md:text-left text-white text-3xl font-bold mb-4 left-0 top-0 md:-top-12"
+    >
+      Juan Rojas, Frontend Developer.
+    </h1>
+    <WindowContainer
+      className="z-10 bg-[#0006261f] border-[#c8cdffa2] backdrop-blur-[2px]"
+    >
       <PresentationImg />
-      <section
-        class="flex justify-center gap-2 my-4 bg-slate-50 rounded-md py-4"
-      >
-        <SocialMediaLink
-          description="Linkedin"
-          icon="/icons/linkedin.svg"
-          link="https://www.linkedin.com/in/juanrojasdev/"
-        />
-        <SocialMediaLink
-          description="Github"
-          icon="/icons/github.svg"
-          link="https://github.com/tmchein"
-        />
-        <SocialMediaLink
-          description="Twitter"
-          icon="/icons/twitter.svg"
-          link="https://twitter.com/tmchein"
-        />
-      </section>
       <section class="my-4 text-left">
-        I am a software engineer with 2 years of experience focused in frontend
-        development. I have worked with international teams using tools such as
-        React.js and Node.js to develop and maintain frontend solutions. I am a
-        passionate and collaborative developer who stays ahead of the curve with
-        the JavaScript ecosystem, always willing to learn and improve both
-        technical and non-technical skills, and I am always willing to share
-        meaningful knowledge across teams.
+        <p class="pb-4">
+          Software engineer with 2 years of experience focused in frontend
+          development.
+        </p>
+        <p class="pb-4">
+          I have worked with international teams using tools such as React.js
+          and Node.js to develop and maintain frontend solutions.
+        </p>
+        <p class="pb-4">
+          passionate and collaborative developer who stays ahead of the curve
+          with the JavaScript ecosystem, always willing to learn and improve
+          both technical and non-technical skills.
+        </p>
       </section>
-      <footer class="border-t-2 my-2">
-        <h2 class="text-xl font-extrabold my-2">Technology stack</h2>
-        <div class="flex flex-wrap gap-1">
+      <footer class="mb-2 mt-8">
+        <h2 class="text-xl font-bold pb-1 my-2">Technology stack</h2>
+        <div class="flex flex-wrap gap-3">
           <InfoBadge title="HTML" className="bg-orange-400" />
           <InfoBadge title="CSS" className="bg-sky-400" />
           <InfoBadge title="Javascript" className="bg-yellow-500" />
@@ -72,14 +60,14 @@ import SectionDivider from "../layouts/SectionDivider.astro";
         startDate="Jul 2021"
         endDate="Present"
       />
-      <p class="text-left">
+      <p class="text-left mb-6">
         Worked as a Frontend developer in Backcountry's e-commerce platform, a
         project with a large scale of users and traffic. In Backcountry I gained
         significant experience regarding the process of software development.
         One of the most important challenges I faced in this project was to
         deliver quality code in a fast paced environment.
       </p>
-      <div class="flex flex-wrap gap-1 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <InfoBadge title="HTML" className="bg-orange-400" />
         <InfoBadge title="CSS" className="bg-sky-400" />
         <InfoBadge title="Javascript" className="bg-yellow-500" />
@@ -98,14 +86,14 @@ import SectionDivider from "../layouts/SectionDivider.astro";
         startDate="Jan 2021"
         endDate="Jul 2021"
       />
-      <p class="text-left">
+      <p class="text-left mb-6">
         Developed frontend solutions for Torrens University Australia. Worked
         along the development team to implement new designs for the company's
         events and delivered features in a fast paced and constantly changing
         environment. In this position I acquired experience doing pair
         programming.
       </p>
-      <div class="flex flex-wrap gap-1 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <InfoBadge title="HTML" className="bg-orange-400" />
         <InfoBadge title="CSS" className="bg-sky-400" />
         <InfoBadge title="Javascript" className="bg-yellow-500" />
@@ -126,11 +114,11 @@ import SectionDivider from "../layouts/SectionDivider.astro";
         endDate="Feb 2023"
       />
       <img
-        class="max-h-56 mx-auto object-cover w-full"
+        class="max-h-56 mx-auto object-cover w-full mb-4"
         src="/images/projects/lyrai-web-page.webp"
         alt="Imagen de la pagina Lyrai"
       />
-      <p class="text-left">
+      <p class="text-left mb-6">
         Participated in midudev Cohere's hackathon along Pablo Hernandez, David
         Huertas, Ignacio Aldama and Sara Montagud. In this project we created a
         tool that checks if a review is computer generated or human generated.
@@ -141,7 +129,7 @@ import SectionDivider from "../layouts/SectionDivider.astro";
           target="_blank">https://lyrai.fly.dev</a
         >
       </p>
-      <div class="flex flex-wrap gap-1 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <InfoBadge title="React" className="bg-sky-500" />
         <InfoBadge title="Next.js" className="bg-white" />
         <InfoBadge title="TailwindCSS" className="bg-sky-500" />
@@ -157,11 +145,11 @@ import SectionDivider from "../layouts/SectionDivider.astro";
         endDate="Aug 2022"
       />
       <img
-        class="max-h-56 mx-auto object-cover w-full"
+        class="max-h-56 mx-auto object-cover w-full mb-4"
         src="/images/projects/sui.jpg"
         alt="Imagen de la pagina SuperUI"
       />
-      <p class="text-left">
+      <p class="text-left mb-6">
         Participated in Supabase's hackathon week 5 along Pablo Hernandez, David
         Huertas and Ignacio Aldama. Finished in 2nd place as best project
         overall with our Tailwind React Component Library. Check more at: <a
@@ -171,7 +159,7 @@ import SectionDivider from "../layouts/SectionDivider.astro";
           target="_blank">https://superui.vercel.app</a
         >
       </p>
-      <div class="flex flex-wrap gap-1 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <InfoBadge title="HTML" className="bg-orange-400" />
         <InfoBadge title="CSS" className="bg-sky-400" />
         <InfoBadge title="React" className="bg-sky-500" />
@@ -189,11 +177,11 @@ import SectionDivider from "../layouts/SectionDivider.astro";
         startDate="Jul 2022"
       />
       <img
-        class="max-h-56 mx-auto object-cover w-full"
+        class="max-h-56 mx-auto object-cover w-full mb-4"
         src="/images/projects/tmurl_og.jpg"
         alt="Imagen de la pagina TMUrl"
       />
-      <p class="text-left">
+      <p class="text-left mb-6">
         I was curious about how to create an URL shortener, so I created TMUrl
         using Nextjs, Prisma and a Database deployed on Railway. Check more at: <a
           class="text-pink-500"
@@ -202,7 +190,7 @@ import SectionDivider from "../layouts/SectionDivider.astro";
           target="_blank">https://tmurl.vercel.app</a
         >
       </p>
-      <div class="flex flex-wrap gap-1 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <InfoBadge title="TailwindCSS" className="bg-sky-500" />
         <InfoBadge title="Next.js" className="bg-white" />
         <InfoBadge title="Prisma" className="bg-emerald-600" />
@@ -217,11 +205,11 @@ import SectionDivider from "../layouts/SectionDivider.astro";
         startDate="Dec 2022"
       />
       <img
-        class="max-h-56 mx-auto object-cover w-full"
+        class="max-h-56 mx-auto object-cover w-full mb-4"
         src="/images/projects/tmblog-og-image.png"
         alt="Imagen de la pagina blog.tmchein.dev"
       />
-      <p class="text-left">
+      <p class="text-left mb-6">
         I have a blog of opinion where I talk about coding stuff. For this
         project I used Deno Fresh, which is incredible for creating static
         websites. The best part about Deno is that the deploy time is blazingly
@@ -232,7 +220,7 @@ import SectionDivider from "../layouts/SectionDivider.astro";
           target="_blank">https://blog.tmchein.dev</a
         >
       </p>
-      <div class="flex flex-wrap gap-1 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <InfoBadge title="Deno Fresh" className="bg-yellow-400" />
         <InfoBadge title="MarkDown" className="bg-sky-500" />
       </div>
@@ -246,11 +234,11 @@ import SectionDivider from "../layouts/SectionDivider.astro";
         startDate="Dec 2022"
       />
       <img
-        class="max-h-56 mx-auto object-cover w-full"
+        class="max-h-56 mx-auto object-cover w-full mb-4"
         src="/images/projects/tmclima.jpg"
         alt="Imagen de la pagina TMClima"
       />
-      <p class="text-left">
+      <p class="text-left mb-6">
         An entry for Midudev's hackathon with RapidAPI where I developed a web
         application with a weather API, in this case I used Sveltekit to learn
         about new frameworks. Check more at: <a
@@ -260,7 +248,7 @@ import SectionDivider from "../layouts/SectionDivider.astro";
           target="_blank">https://tmclima.netlify.app/</a
         >
       </p>
-      <div class="flex flex-wrap gap-1 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <InfoBadge title="Svelte" className="bg-orange-500" />
       </div>
     </WindowContainer>

@@ -1,18 +1,13 @@
 ---
 import InfoBadge from "./InfoBadge.astro";
+import SocialMediaLink from "./SocialMediaLink.astro";
 ---
 
 <section class="flex justify-center items-center gap-8 flex-col md:flex-row">
-  <div class="relative w-max">
-    <span
-      class="absolute -inset-0.5 bg-gradient-to-r from-supa-green to-supa-white rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
-    ></span>
-    <span
-      class="absolute -inset-[1px] bg-gradient-to-r from-supa-green to-supa-white rounded-full"
-    ></span>
+  <div class="w-max">
     <img
       src="/images/myface.jpg"
-      class="relative w-32 h-32 rounded-full"
+      class="w-36 h-36 rounded-full"
       alt="A picture of Juan Rojas, looking directly to the camera.
       Juan is a person with tanned skin color and black hair, in this
       picture he is wearing a blue tshirt"
@@ -22,13 +17,26 @@ import InfoBadge from "./InfoBadge.astro";
     <InfoBadge title="Globant 💼" className="bg-[#8CC63E]" hiring />
     <InfoBadge
       transparent
-      title="Mid level frontend developer"
+      title="Mid level front end developer"
       className="bg-supa-white text-black"
     />
-    <InfoBadge
-      transparent
-      title="Colombia 🇨🇴"
-      className="border-2 text-white"
-    />
+    <InfoBadge transparent title="Colombia 🇨🇴" className="text-white" />
+    <section class="flex justify-[inherit] gap-2 mb-4 rounded-md">
+      <SocialMediaLink
+        description="Linkedin"
+        icon="/icons/linkedin.svg"
+        link="https://www.linkedin.com/in/juanrojasdev/"
+      />
+      <SocialMediaLink
+        description="Github"
+        icon="/icons/github.svg"
+        link="https://github.com/tmchein"
+      />
+      <SocialMediaLink
+        description="Twitter"
+        icon="/icons/twitter.svg"
+        link="https://twitter.com/tmchein"
+      />
+    </section>
   </div>
 </section>
